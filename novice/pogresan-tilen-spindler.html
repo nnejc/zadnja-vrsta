@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pogrešan: Tilen Špindler · Zadnja vrsta</title>
-<meta name="description" content="Tilen Špindler, med sošolci znan kot Špindi ali Bambi, na faksu ni bil viden že od 6. 7. Satirična novica Zadnje vrste.">
+<title>Pogrešan: Tilen Spindler · Zadnja vrsta</title>
+<meta name="description" content="Tilen Spindler, med sošolci znan kot Spindi ali Bambi, na faksu ni bil viden že od 6. 7. Satirična novica Zadnje vrste.">
 <meta name="theme-color" content="#0f1a3a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Pogrešan: Tilen Špindler">
+<meta property="og:title" content="Pogrešan: Tilen Spindler">
 <meta property="og:description" content="Na faksu ga ni od 6. 7. Zadnjič viden v puhovcu, z robčki in ledenim čajem v rokah.">
 <meta property="og:url" content="https://nnejc.github.io/zadnja-vrsta/novice/pogresan-tilen-spindler.html">
 <meta property="og:image" content="https://nnejc.github.io/zadnja-vrsta/assets/pogresan-spindi.jpg">
@@ -76,6 +76,30 @@ article h2{font-family:var(--f-display);font-weight:700;font-size:clamp(1.6rem,2
 .theories li::before{content:counter(t,upper-alpha);position:absolute;left:18px;top:16px;width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:var(--accent);color:var(--ink);font-family:var(--f-display);font-weight:800}
 .theories b{color:var(--text-primary)}
 .note{font-family:var(--f-hand);font-size:1.6rem;line-height:1.15;color:var(--accent);transform:rotate(-2deg);margin:1.2em 0 1.4em}
+.timeline{list-style:none;margin:0 0 1.4em;padding:0 0 0 22px;border-left:2px solid var(--accent-muted);display:grid;gap:18px}
+.timeline li{position:relative;display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:baseline}
+.timeline li::before{content:"";position:absolute;left:-29px;top:.45em;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--canvas)}
+.timeline li:last-child::before{background:var(--coral)}
+.timeline .when{color:var(--accent)}
+.timeline .what{color:#dfe3f1}
+@media (max-width:560px){.timeline li{grid-template-columns:1fr;gap:4px}}
+.quotes{display:grid;gap:16px;margin:0 0 1.4em}
+.quotes blockquote{margin:0;padding:20px 22px;border-radius:16px;background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);border-left:4px solid var(--accent)}
+.quotes blockquote p{margin:0 0 8px !important;font-family:var(--f-display);font-weight:700;font-size:1.2rem;line-height:1.3;color:var(--text-primary) !important}
+.quotes cite{font-style:normal;color:var(--text-secondary)}
+.signs{margin:0 0 1.4em;padding-left:1.2em;color:#dfe3f1}
+.signs li{margin-bottom:.4em}
+.signs li::marker{color:var(--accent)}
+.report{margin:2.4em 0;padding:28px;border-radius:22px;background:linear-gradient(160deg,var(--panel-2),var(--panel));box-shadow:inset 0 0 0 1.5px var(--accent-muted)}
+.report h2{margin-top:0}
+.pick-label{color:var(--accent);margin:1.4em 0 .8em !important}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips button{font:inherit;font-weight:600;cursor:pointer;border:0;border-radius:999px;padding:10px 18px;min-height:44px;background:rgba(243,241,234,.08);color:var(--text-primary);box-shadow:inset 0 0 0 1.5px var(--line-strong);transition:background-color .3s var(--ease-out),color .3s var(--ease-out),transform .3s var(--ease-out)}
+.chips button:hover{transform:translateY(-2px);background:rgba(243,241,234,.14)}
+.chips button[aria-pressed="true"]{background:var(--accent);color:var(--ink);box-shadow:none}
+.verdict{min-height:3.2em;margin:1em 0 0 !important;font-family:var(--f-hand);font-size:1.6rem;line-height:1.2;color:var(--accent) !important;opacity:0;transform:translateY(6px);transition:opacity .5s var(--ease-out),transform .5s var(--ease-out)}
+.verdict.on{opacity:1;transform:none}
+.verdict:empty{min-height:0;margin:0 !important}
 .howto{background:var(--paper);color:var(--paper-ink);border-radius:20px;padding:26px 28px;margin:2em 0;transform:rotate(-.6deg);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
 .howto .mono{color:#5a6180}
 .howto p{color:var(--paper-ink) !important;margin:.6em 0 0 !important}
@@ -114,49 +138,91 @@ footer p{margin:0 0 8px;max-width:70ch}
       <header class="poster" id="poster">
         <figure class="photo rv" style="margin:0">
           <span class="stamp" aria-hidden="true">Pogrešan</span>
-          <img src="../assets/pogresan-spindi.jpg" alt="Črno-bela fotografija Tilna Špindlerja v trgovini. V eni roki drži paket papirnatih robčkov, v drugi ledeni čaj z breskvijo." width="819" height="1456">
+          <img src="../assets/pogresan-spindi.jpg" alt="Črno-bela fotografija Tilna Spindlerja v trgovini. V eni roki drži paket papirnatih robčkov, v drugi ledeni čaj z breskvijo." width="819" height="1456">
           <figcaption>zadnja znana fotografija</figcaption>
         </figure>
         <div class="rv">
           <p class="kick mono">Faks &amp; posel · Nujno</p>
-          <h1>Pogrešan: <span class="hl">Tilen Špindler<svg viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 28 9, 62 14, 97 10"/></svg></span></h1>
-          <p class="lede">Tilen Špindler, za prijatelje in sošolce znan pod vzdevkom Špindi ali Bambi, na faksu ni bil viden že od 6. 7. Sošolci prosijo za pomoč.</p>
+          <h1>Pogrešan: <span class="hl">Tilen Spindler<svg viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 28 9, 62 14, 97 10"/></svg></span></h1>
+          <p class="lede">Tilen Spindler, za prijatelje in sošolce znan pod vzdevkom Spindi ali Bambi, na faksu ni bil viden že od 6. 7. Sošolci prosijo za pomoč.</p>
           <dl class="facts">
-            <dt>Ime</dt><dd>Tilen Špindler</dd>
-            <dt>Vzdevek</dt><dd>Špindi, Bambi</dd>
+            <dt>Ime</dt><dd>Tilen Spindler</dd>
+            <dt>Vzdevek</dt><dd>Spindi, Bambi</dd>
             <dt>Zadnjič viden</dt><dd>6. 7., hodnik EPF, okoli 11.40</dd>
             <dt>Oblečen</dt><dd>Črn puhovec brez rokavov, črn pulover s kapuco, bež hlače, siv nahrbtnik</dd>
             <dt>S seboj</dt><dd>Paket papirnatih robčkov, ledeni čaj z breskvijo</dd>
           </dl>
-          <p class="meta mono">Uredništvo Zadnje vrste · 3 min branja</p>
+          <p class="meta mono">Uredništvo Zadnje vrste · 5 min branja</p>
         </div>
       </header>
 
       <div class="body">
-        <p>Bilo je 6. julija, malo pred poldnevom. Zunaj je bilo 31 stopinj, Špindi pa je po hodniku EPF hodil v črnem puhovcu brez rokavov, črnem puloverju s kapuco in bež hlačah. Na hrbtu je imel siv nahrbtnik. Sošolci se spominjajo, da je rekel »se vidimo jeseni«. Jesen je prišla. Špindija ni.</p>
-        <p>Od takrat ga ni ne na predavanjih ne na vajah ne v vrsti za kavo. Njegov sedež v zadnji vrsti stoji prazen in, po besedah prič, nenavadno čist.</p>
+        <p>Bilo je 6. julija, malo pred poldnevom. Zunaj je bilo 31 stopinj, Spindi pa je po hodniku EPF hodil v črnem puhovcu brez rokavov, črnem puloverju s kapuco in bež hlačah. Na hrbtu je imel siv nahrbtnik. Sošolci se spominjajo, da je rekel »se vidimo jeseni«. Jesen je prišla. Spindija ni.</p>
+        <p>Od takrat ga ni ne na predavanjih ne na vajah ne v vrsti za kavo. Njegov sedež v zadnji vrsti stoji prazen in, po besedah prič, nenavadno čist. Kdor pozna Spindija, ve, da to ni normalno. Spindi je bil človek, ki je vedno prišel. Malo pozno, malo zaspan, ampak prišel je.</p>
+        <p>Prvi teden novega semestra so sošolci njegovo odsotnost še pripisali poletni utrujenosti. Drugi teden so začeli spraševati. Danes, skoraj tri mesece po zadnjem opažanju, uredništvo Zadnje vrste uradno sprašuje: kje je Bambi?</p>
+
+        <h2>Kronologija izginotja</h2>
+        <ol class="timeline">
+          <li><span class="when mono">6. 7., 11.40</span><span class="what">Spindi zapusti predavalnico po zadnjem izpitnem roku. Na hodniku reče »se vidimo jeseni« in pomaha z vrečko robčkov.</span></li>
+          <li><span class="when mono">6. 7., 12.15</span><span class="what">Priča ga vidi v trgovini blizu faksa. Kupuje robčke in ledeni čaj z breskvijo. Na blagajni plača z drobižem, kar priča opiše kot »sumljivo pripravljeno«.</span></li>
+          <li><span class="when mono">Julij</span><span class="what">V skupini letnika na WhatsAppu pošlje en sam palec gor. Nato tišina.</span></li>
+          <li><span class="when mono">Avgust</span><span class="what">Neuradni viri poročajo, da je na Moodlu enkrat odprl gradivo za statistiko. Samo odprl.</span></li>
+          <li><span class="when mono">1. 10.</span><span class="what">Prvi dan predavanj. Stol v zadnji vrsti ostane prazen. Nekdo nanj pusti robček, v spomin.</span></li>
+          <li><span class="when mono">Danes</span><span class="what">Spindija še vedno ni. Robček na stolu je še vedno tam.</span></li>
+        </ol>
 
         <h2>Zadnja znana fotografija</h2>
         <p>Edini dokaz, ki ga imamo, je fotografija iz trgovine. Na njej se Bambi smehlja kot nekdo, ki ve nekaj, česar mi ne vemo. V levi roki drži velik paket papirnatih robčkov, v desni pa ledeni čaj z breskvijo z napisom Volim Tea.</p>
-        <p class="note">Strokovnjaki opozarjajo na božične okraske v ozadju. Fotografija je bodisi stara bodisi je Špindi v trgovini že tako dolgo, da je prišel december.</p>
+        <p class="note">Strokovnjaki opozarjajo na božične okraske v ozadju. Fotografija je bodisi stara bodisi je Spindi v trgovini že tako dolgo, da je prišel december.</p>
 
         <h2>Teorije iz zadnje vrste</h2>
         <ul class="theories">
-          <li><b>Robčki so poslovni model.</b> Špindi je ugotovil, da imajo robčki boljšo maržo kot vsak startup s predavanj, in jih zdaj preprodaja v jesenski sezoni prehladov.</li>
+          <li><b>Robčki so poslovni model.</b> Spindi je ugotovil, da imajo robčki boljšo maržo kot vsak startup s predavanj, in jih zdaj preprodaja v jesenski sezoni prehladov.</li>
           <li><b>Tea je oseba, ne pijača.</b> Več podrobnosti zaenkrat nimamo. Uredništvo zgodbo spremlja.</li>
           <li><b>Še vedno išče predavalnico.</b> Po tej teoriji Bambi od julija kroži po stavbi in sprašuje, kje je P1.</li>
           <li><b>Odprl je svoje podjetje.</b> In je zdaj predaleč, da bi hodil na predavanja. Na vprašanje, ali je bil na faksu, baje odgovarja »ja, online«.</li>
         </ul>
 
+        <h2>Kaj pravijo sošolci</h2>
+        <div class="quotes">
+          <blockquote><p>»Bambi je imel vedno robček, ko ga je kdo rabil. Zdaj pa mi rabimo njega.«</p><cite class="mono">Sošolka, 3. letnik</cite></blockquote>
+          <blockquote><p>»Julija je rekel, da gre na kratek pivot. Nismo vedeli, da misli tri mesece.«</p><cite class="mono">Kolega iz projektne skupine</cite></blockquote>
+          <blockquote><p>»Pri skupinskih nalogah je bil zanesljiv. Vedno je naredil naslovno stran. Lepo naslovno stran.«</p><cite class="mono">Anonimni vir iz zadnje vrste</cite></blockquote>
+        </div>
+
+        <h2>Ekonomske posledice</h2>
+        <p>Kot pravi podjetniški medij ne moremo mimo številk. Po naših neuradnih izračunih je kavomat v pritličju od julija prodal precej manj ledenega čaja z breskvijo. Trgovina blizu faksa poroča o presežku zalog papirnatih robčkov. Analitiki iz zadnje vrste so enotni: Spindi ni bil samo študent, bil je cel tržni segment.</p>
+        <p>Profesorji za ekonomiko podjetja so primer že predlagali kot študijo za vaje. Naslov: <i>Kaj se zgodi s trgom, ko izgine ključni kupec.</i></p>
+
         <h2>Posebni znaki</h2>
-        <p>Nasmeh, kot da je pravkar dobil desetko iz statistike. Brada, ki jo vzdržuje bolj redno kot obisk predavanj. Ob omembi izpitnih rokov se tiho umakne proti izhodu.</p>
+        <ul class="signs">
+          <li>Nasmeh, kot da je pravkar dobil desetko iz statistike.</li>
+          <li>Brada, ki jo vzdržuje bolj redno kot obisk predavanj.</li>
+          <li>Ob omembi izpitnih rokov se tiho umakne proti izhodu.</li>
+          <li>Odziva se na klic »Spindi«, »Bambi« in »kdo ima robček?«.</li>
+          <li>Tudi poleti nosi puhovec. Razlog ostaja neznan.</li>
+        </ul>
 
         <div class="howto">
           <p class="mono">Kaj storiti, če ga vidiš</p>
-          <p>Če Špindija opaziš na hodniku EPF, v knjižnici ali v vrsti za kavo, ga ne plaši. Počasi se mu približaj, ponudi mu skripto in ga nežno usmeri v predavalnico. Najbolje deluje zadnja vrsta.</p>
+          <p>Če Spindija opaziš na hodniku EPF, v knjižnici ali v vrsti za kavo, ga ne plaši. Počasi se mu približaj, ponudi mu skripto in ga nežno usmeri v predavalnico. Najbolje deluje zadnja vrsta.</p>
         </div>
 
-        <p>Bambi, če to bereš: pogrešamo te. Tvoj stol te čaka, profesorji te pozdravljajo, mi pa bi si spet sposodili kakšen robček.</p>
+        <section class="report" id="javi" aria-labelledby="javi-h">
+          <h2 id="javi-h">Si ga videl? <span class="hl">Javi!<svg viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 28 9, 62 14, 97 10"/></svg></span></h2>
+          <p>Vsako opažanje šteje. Če si Spindija videl kjerkoli, na faksu, v menzi, v trgovini ali na avtobusni postaji, to takoj javi v skupino letnika ali odgovori na ponedeljkov e-mail Zadnje vrste. Povej, kje si ga videl, kdaj in kaj je imel v rokah. Če so bili to robčki, je skoraj zagotovo on.</p>
+          <p class="mono pick-label">Kje si ga videl?</p>
+          <div class="chips" role="group" aria-label="Kje si ga videl">
+            <button type="button" data-r="Knjižnica? Spindi? Prosimo, preveri še enkrat. Morda je bil nekdo podoben.">V knjižnici</button>
+            <button type="button" data-r="Menza je zelo verjetna. Bambi nikoli ni zamudil malice, samo predavanja.">V menzi</button>
+            <button type="button" data-r="Vrsta za kavo! To je njegov naravni habitat. Ne delaj nenadnih gibov.">V vrsti za kavo</button>
+            <button type="button" data-r="Predavalnica? To bi bila senzacija. Če je res, nemudoma pokliči uredništvo in vse sošolce.">V predavalnici</button>
+            <button type="button" data-r="Trgovina z robčki. Logično. Preveri, ali je imel s seboj tudi ledeni čaj.">V trgovini</button>
+          </div>
+          <p class="verdict" id="verdict" aria-live="polite"></p>
+        </section>
+
+        <p>Bambi, če to bereš: pogrešamo te. Tvoj stol te čaka, profesorji te pozdravljajo, mi pa bi si spet sposodili kakšen robček. Pridi nazaj. Zadnja vrsta brez tebe ni ista.</p>
 
         <div class="share">
           <button class="btn" type="button" id="share">Deli z ekipo</button>
@@ -180,10 +246,19 @@ footer p{margin:0 0 8px;max-width:70ch}
 <script>
 (() => {
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
-  document.querySelectorAll('.poster, .rv').forEach(el => io.observe(el));
+  document.querySelectorAll('.poster, .rv, .report').forEach(el => io.observe(el));
+  const verdict = document.getElementById('verdict');
+  const chips = [...document.querySelectorAll('.chips button')];
+  chips.forEach(b => b.setAttribute('aria-pressed', 'false'));
+  chips.forEach(b => b.addEventListener('click', () => {
+    chips.forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    verdict.classList.remove('on'); void verdict.offsetWidth;
+    verdict.textContent = b.dataset.r + ' Opažanje javi v skupino letnika.';
+    verdict.classList.add('on');
+  }));
   const btn = document.getElementById('share'), out = document.getElementById('copied');
   btn.addEventListener('click', async () => {
-    const data = { title: 'Pogrešan: Tilen Špindler', text: 'Na faksu ga ni od 6. 7. Si ga videl?', url: location.href };
+    const data = { title: 'Pogrešan: Tilen Spindler', text: 'Na faksu ga ni od 6. 7. Si ga videl?', url: location.href };
     try {
       if (navigator.share) { await navigator.share(data); return; }
       await navigator.clipboard.writeText(location.href);
