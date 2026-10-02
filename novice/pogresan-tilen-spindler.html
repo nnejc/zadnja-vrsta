@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pogrešan: Tilen Špindler · Zadnja vrsta</title>
+<meta name="description" content="Tilen Špindler, med sošolci znan kot Špindi ali Bambi, na faksu ni bil viden že od 6. 7. Satirična novica Zadnje vrste.">
+<meta name="theme-color" content="#0f1a3a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pogrešan: Tilen Špindler">
+<meta property="og:description" content="Na faksu ga ni od 6. 7. Zadnjič viden v puhovcu, z robčki in ledenim čajem v rokah.">
+<meta property="og:url" content="https://nnejc.github.io/zadnja-vrsta/novice/pogresan-tilen-spindler.html">
+<meta property="og:image" content="https://nnejc.github.io/zadnja-vrsta/assets/pogresan-spindi.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1a3a'/%3E%3Cpath d='M54 14 10 30l16 6 4 16 8-11 10 6z' fill='%23f4e43c'/%3E%3Cpath d='M26 36 54 14 30 52' fill='none' stroke='%230f1a3a' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Caveat:wght@600&family=DM+Mono:wght@400;500&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+@property --hk{syntax:'<number>';inherits:true;initial-value:0}
+:root{
+  --canvas:#0f1a3a;--panel:#16244d;--panel-2:#1c2c5c;--accent:#f4e43c;--accent-hover:#fff06a;--accent-muted:rgba(244,228,60,.18);
+  --coral:#ff6b4a;--text-secondary:#b3bddc;--text-primary:#f3f1ea;--ink:#0f1a3a;--line:rgba(179,189,220,.16);--line-strong:rgba(179,189,220,.55);
+  --paper:#f3f1ea;--paper-ink:#1a1d26;
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  --f-display:'Bricolage Grotesque',system-ui,sans-serif;--f-body:'Figtree',system-ui,sans-serif;--f-mono:'DM Mono',ui-monospace,monospace;--f-hand:'Caveat',cursive;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:hidden;overflow-x:clip;-webkit-text-size-adjust:100%}
+body{margin:0;overflow-x:hidden;overflow-x:clip;background:var(--canvas);color:var(--text-primary);font-family:var(--f-body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;animation:pageIn .8s var(--ease-out) both}
+@keyframes pageIn{from{opacity:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:16px;top:-60px;z-index:100;background:var(--accent);color:var(--ink);padding:10px 16px;border-radius:10px;font-weight:600;text-decoration:none}
+.skip:focus{top:16px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.mono{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.env{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(70vmax 70vmax at 10% 0%,rgba(46,78,170,.4),transparent 60%),radial-gradient(60vmax 60vmax at 100% 100%,rgba(244,228,60,.05),transparent 60%)}
+
+.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px clamp(16px,4vw,48px);background:rgba(15,26,58,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-weight:800;font-size:1.2rem}
+.brand svg{width:28px;height:28px}
+.back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:.95rem;opacity:.85;transition:opacity .3s var(--ease-out)}
+.back:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 22px;background:var(--accent);color:var(--ink);transition:background-color .3s var(--ease-out),transform .3s var(--ease-out)}
+.btn:hover{background:var(--accent-hover);transform:translateY(-2px)}
+@media (pointer:coarse){.btn,.back{min-height:44px}}
+
+.wrap{width:min(1100px,100% - 32px);margin:0 auto}
+.hl{position:relative;isolation:isolate;white-space:nowrap;margin:0 .16em;color:color-mix(in srgb,var(--ink) calc(var(--hk)*100%),var(--text-primary));--hk:0;transition:--hk 1s var(--ease-out) .5s}
+.hl svg{position:absolute;left:-.1em;top:-.06em;width:calc(100% + .2em);height:calc(100% + .1em);z-index:-1;overflow:visible}
+.hl path{fill:none;stroke:var(--accent);stroke-width:20;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--hk))}
+.in .hl{--hk:1}
+
+/* poster */
+.poster{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:start;padding:clamp(40px,7vw,90px) 0 clamp(50px,7vw,90px)}
+.photo{position:relative;background:var(--paper);padding:14px 14px 56px;box-shadow:0 40px 70px -30px rgba(0,0,0,.75);transform:rotate(-1.8deg);transition:transform .8s var(--ease-out)}
+.photo:hover{transform:rotate(0)}
+.photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 28%}
+.photo::before{content:"";position:absolute;top:-14px;left:50%;width:110px;height:28px;transform:translateX(-50%) rotate(3deg);background:rgba(243,241,234,.5);backdrop-filter:blur(2px)}
+.photo figcaption{position:absolute;left:18px;right:18px;bottom:12px;font-family:var(--f-hand);font-size:1.5rem;line-height:1.1;color:var(--paper-ink)}
+.stamp{position:absolute;right:-18px;bottom:34%;z-index:2;padding:8px 18px;border:4px solid var(--coral);color:var(--coral);font-family:var(--f-display);font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:.06em;text-transform:uppercase;transform:rotate(12deg);background:rgba(15,26,58,.25);backdrop-filter:blur(1px);border-radius:6px;mix-blend-mode:normal}
+.kick{color:var(--accent);margin:0 0 14px}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(2.6rem,6vw,5rem);line-height:1;letter-spacing:-.03em;margin:0}
+.lede{font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.5;margin:22px 0 0;max-width:42ch}
+.facts{margin:32px 0 0;padding:0;display:grid;grid-template-columns:auto 1fr;gap:12px 22px;border-top:1px solid var(--line);padding-top:24px}
+.facts dt{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding-top:4px}
+.facts dd{margin:0;color:var(--text-primary)}
+.meta{margin-top:26px;color:var(--text-secondary)}
+
+article .body{max-width:68ch;margin:0 auto;padding:0 0 40px}
+article .body p{margin:0 0 1.2em;color:#dfe3f1}
+article h2{font-family:var(--f-display);font-weight:700;font-size:clamp(1.6rem,2.6vw,2.1rem);line-height:1.15;letter-spacing:-.015em;margin:1.8em 0 .7em;color:var(--text-primary)}
+.theories{list-style:none;margin:0 0 1.4em;padding:0;display:grid;gap:14px;counter-reset:t}
+.theories li{position:relative;padding:18px 20px 18px 66px;background:var(--panel);border-radius:16px;box-shadow:inset 0 0 0 1px var(--line);counter-increment:t}
+.theories li::before{content:counter(t,upper-alpha);position:absolute;left:18px;top:16px;width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:var(--accent);color:var(--ink);font-family:var(--f-display);font-weight:800}
+.theories b{color:var(--text-primary)}
+.note{font-family:var(--f-hand);font-size:1.6rem;line-height:1.15;color:var(--accent);transform:rotate(-2deg);margin:1.2em 0 1.4em}
+.howto{background:var(--paper);color:var(--paper-ink);border-radius:20px;padding:26px 28px;margin:2em 0;transform:rotate(-.6deg);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.howto .mono{color:#5a6180}
+.howto p{color:var(--paper-ink) !important;margin:.6em 0 0 !important}
+.satire{margin:36px 0 0;padding:16px 18px;border-radius:14px;border:1.5px dashed var(--line-strong);color:var(--text-secondary);font-size:.95rem}
+.satire b{color:var(--text-primary)}
+.share{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.share .ghost{background:transparent;color:var(--text-primary);box-shadow:inset 0 0 0 1.5px var(--line-strong)}
+.share .ghost:hover{background:rgba(243,241,234,.06)}
+.copied{color:var(--accent);font-family:var(--f-hand);font-size:1.4rem;opacity:0;transition:opacity .4s var(--ease-out)}
+.copied.on{opacity:1}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out)}
+.in .rv,.rv.in{opacity:1;transform:none}
+.poster.in .rv:nth-child(2){transition-delay:.12s}
+
+footer{margin-top:40px;padding:50px 0;border-top:1px solid var(--line);color:var(--text-secondary);font-size:.95rem}
+footer p{margin:0 0 8px;max-width:70ch}
+@media (max-width:820px){.poster{grid-template-columns:1fr}.photo{max-width:440px;margin:0 auto}.stamp{right:-6px}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}.rv{opacity:1;transform:none}.hl{--hk:1}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Preskoči na vsebino</a>
+<div class="env" aria-hidden="true"></div>
+<nav class="nav" aria-label="Navigacija">
+  <a class="brand" href="../index.html">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M58 10 6 30l18 7 5 19 9-13 12 7z" fill="#f4e43c"/><path d="M24 37 58 10 29 56" fill="none" stroke="#0f1a3a" stroke-width="2.5" stroke-linejoin="round"/></svg>
+    Zadnja vrsta
+  </a>
+  <a class="back" href="../index.html#novice">← Vse novice</a>
+</nav>
+
+<main id="main" tabindex="-1">
+  <article>
+    <div class="wrap">
+      <header class="poster" id="poster">
+        <figure class="photo rv" style="margin:0">
+          <span class="stamp" aria-hidden="true">Pogrešan</span>
+          <img src="../assets/pogresan-spindi.jpg" alt="Črno-bela fotografija Tilna Špindlerja v trgovini. V eni roki drži paket papirnatih robčkov, v drugi ledeni čaj z breskvijo." width="819" height="1456">
+          <figcaption>zadnja znana fotografija</figcaption>
+        </figure>
+        <div class="rv">
+          <p class="kick mono">Faks &amp; posel · Nujno</p>
+          <h1>Pogrešan: <span class="hl">Tilen Špindler<svg viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 28 9, 62 14, 97 10"/></svg></span></h1>
+          <p class="lede">Tilen Špindler, za prijatelje in sošolce znan pod vzdevkom Špindi ali Bambi, na faksu ni bil viden že od 6. 7. Sošolci prosijo za pomoč.</p>
+          <dl class="facts">
+            <dt>Ime</dt><dd>Tilen Špindler</dd>
+            <dt>Vzdevek</dt><dd>Špindi, Bambi</dd>
+            <dt>Zadnjič viden</dt><dd>6. 7., hodnik EPF, okoli 11.40</dd>
+            <dt>Oblečen</dt><dd>Črn puhovec brez rokavov, črn pulover s kapuco, bež hlače, siv nahrbtnik</dd>
+            <dt>S seboj</dt><dd>Paket papirnatih robčkov, ledeni čaj z breskvijo</dd>
+          </dl>
+          <p class="meta mono">Uredništvo Zadnje vrste · 3 min branja</p>
+        </div>
+      </header>
+
+      <div class="body">
+        <p>Bilo je 6. julija, malo pred poldnevom. Zunaj je bilo 31 stopinj, Špindi pa je po hodniku EPF hodil v črnem puhovcu brez rokavov, črnem puloverju s kapuco in bež hlačah. Na hrbtu je imel siv nahrbtnik. Sošolci se spominjajo, da je rekel »se vidimo jeseni«. Jesen je prišla. Špindija ni.</p>
+        <p>Od takrat ga ni ne na predavanjih ne na vajah ne v vrsti za kavo. Njegov sedež v zadnji vrsti stoji prazen in, po besedah prič, nenavadno čist.</p>
+
+        <h2>Zadnja znana fotografija</h2>
+        <p>Edini dokaz, ki ga imamo, je fotografija iz trgovine. Na njej se Bambi smehlja kot nekdo, ki ve nekaj, česar mi ne vemo. V levi roki drži velik paket papirnatih robčkov, v desni pa ledeni čaj z breskvijo z napisom Volim Tea.</p>
+        <p class="note">Strokovnjaki opozarjajo na božične okraske v ozadju. Fotografija je bodisi stara bodisi je Špindi v trgovini že tako dolgo, da je prišel december.</p>
+
+        <h2>Teorije iz zadnje vrste</h2>
+        <ul class="theories">
+          <li><b>Robčki so poslovni model.</b> Špindi je ugotovil, da imajo robčki boljšo maržo kot vsak startup s predavanj, in jih zdaj preprodaja v jesenski sezoni prehladov.</li>
+          <li><b>Tea je oseba, ne pijača.</b> Več podrobnosti zaenkrat nimamo. Uredništvo zgodbo spremlja.</li>
+          <li><b>Še vedno išče predavalnico.</b> Po tej teoriji Bambi od julija kroži po stavbi in sprašuje, kje je P1.</li>
+          <li><b>Odprl je svoje podjetje.</b> In je zdaj predaleč, da bi hodil na predavanja. Na vprašanje, ali je bil na faksu, baje odgovarja »ja, online«.</li>
+        </ul>
+
+        <h2>Posebni znaki</h2>
+        <p>Nasmeh, kot da je pravkar dobil desetko iz statistike. Brada, ki jo vzdržuje bolj redno kot obisk predavanj. Ob omembi izpitnih rokov se tiho umakne proti izhodu.</p>
+
+        <div class="howto">
+          <p class="mono">Kaj storiti, če ga vidiš</p>
+          <p>Če Špindija opaziš na hodniku EPF, v knjižnici ali v vrsti za kavo, ga ne plaši. Počasi se mu približaj, ponudi mu skripto in ga nežno usmeri v predavalnico. Najbolje deluje zadnja vrsta.</p>
+        </div>
+
+        <p>Bambi, če to bereš: pogrešamo te. Tvoj stol te čaka, profesorji te pozdravljajo, mi pa bi si spet sposodili kakšen robček.</p>
+
+        <div class="share">
+          <button class="btn" type="button" id="share">Deli z ekipo</button>
+          <a class="btn ghost" href="../index.html#narocnina">Naroči se na Zadnjo vrsto</a>
+          <span class="copied" id="copied" aria-live="polite"></span>
+        </div>
+
+        <p class="satire"><b>Satira.</b> Tilen ni zares pogrešan, samo na faksu ga ni. Če ga resnično iščeš, mu piši. Odgovori v petih minutah, če ni na predavanjih.</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Zadnja vrsta je neuradni študentski projekt za študente usmeritve Podjetništvo. Ni povezana z Ekonomsko-poslovno fakulteto Univerze v Mariboru.</p>
+    <p>Novice na tej strani so satirične. Slike na prvi strani so ustvarjene z umetno inteligenco.</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.poster, .rv').forEach(el => io.observe(el));
+  const btn = document.getElementById('share'), out = document.getElementById('copied');
+  btn.addEventListener('click', async () => {
+    const data = { title: 'Pogrešan: Tilen Špindler', text: 'Na faksu ga ni od 6. 7. Si ga videl?', url: location.href };
+    try {
+      if (navigator.share) { await navigator.share(data); return; }
+      await navigator.clipboard.writeText(location.href);
+      out.textContent = 'povezava kopirana!';
+    } catch { out.textContent = ''; return; }
+    out.classList.add('on'); setTimeout(() => out.classList.remove('on'), 2200);
+  });
+})();
+</script>
+</body>
+</html>

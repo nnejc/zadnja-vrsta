@@ -192,8 +192,16 @@ section{position:relative;padding:clamp(80px,12vw,150px) 0}
 .feature .body{padding:30px;display:flex;flex-direction:column;flex:1}
 .feature h3{font-size:clamp(1.6rem,2.6vw,2.3rem)}
 .feature .sticker{position:absolute;right:18px;top:18px;background:var(--coral);color:#fff;font-family:var(--f-hand);font-size:1.5rem;padding:6px 16px;border-radius:10px;transform:rotate(5deg);box-shadow:0 10px 24px -10px rgba(0,0,0,.5)}
+/* missing-person feature: portrait photo beside the text, poster style */
+.feature.missing{flex-direction:row}
+.feature.missing .img{aspect-ratio:auto;flex:0 0 46%;min-height:100%}
+.feature.missing .img::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(22,36,77,0) 70%,rgba(22,36,77,.9));mix-blend-mode:normal}
+.feature.missing .img img{object-position:50% 30%;filter:contrast(1.05)}
+.feature.missing .sticker{left:18px;right:auto;top:18px;transform:rotate(-6deg);font-size:1.7rem}
+.feature.missing .body{justify-content:center}
+.feature.missing h3{font-size:clamp(1.7rem,2.6vw,2.4rem)}
 @media (max-width:980px){.grid{grid-template-columns:1fr 1fr}.card.feature{grid-column:span 2;grid-row:auto}}
-@media (max-width:640px){.grid{grid-template-columns:1fr}.card.feature{grid-column:auto}}
+@media (max-width:640px){.grid{grid-template-columns:1fr}.card.feature{grid-column:auto}.feature.missing{flex-direction:column}.feature.missing .img{flex:none;aspect-ratio:4/5}.feature.missing .img::after{background:linear-gradient(180deg,rgba(22,36,77,0) 70%,rgba(22,36,77,.9))}}
 
 /* marquee */
 .marquee{padding:30px 0;border-block:1px solid var(--line);overflow:hidden;background:rgba(10,16,40,.45)}
@@ -397,14 +405,14 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
       </div>
 
       <div class="grid">
-        <a class="card feature rv" href="#narocnina">
-          <div class="img"><img src="assets/zgodba-tedna.jpg" alt="Študentska miza s kavo, prenosnikom in rumenim papirnatim letalom" width="1920" height="1080" loading="lazy"></div>
-          <span class="sticker" aria-hidden="true">zgodba tedna</span>
+        <a class="card feature missing rv" href="novice/pogresan-tilen-spindler.html">
+          <div class="img"><img src="assets/pogresan-spindi.jpg" alt="Črno-bela fotografija Tilna Špindlerja v trgovini, v rokah drži papirnate robčke in ledeni čaj" width="819" height="1456" loading="lazy"></div>
+          <span class="sticker" aria-hidden="true">nujno!</span>
           <div class="body">
-            <span class="tag mono">Startup radar</span>
-            <h3>Študentka iz 2. letnika prodaja urejene zapiske. Prvi mesec: 140 € in nič spanca.</h3>
-            <p>Maja je opazila, da vsi iščejo iste zapiske. Zdaj jih prodaja pregledne, z barvnimi markerji vred. Kaj je naredila prav in kje se je skoraj opekla.</p>
-            <div class="meta"><span class="mono">4 min branja</span><span class="mono">Beri v ponedeljek →</span></div>
+            <span class="tag mono coral">Pogrešan</span>
+            <h3>Pogrešan: Tilen Špindler. Na faksu ga ni od 6. 7.</h3>
+            <p>Med prijatelji in sošolci znan kot Špindi ali Bambi. Zadnjič viden v puhovcu, z robčki in ledenim čajem v rokah. Sošolci prosijo za pomoč.</p>
+            <div class="meta"><span class="mono">3 min branja</span><span class="mono">Beri novico →</span></div>
           </div>
         </a>
 
@@ -437,10 +445,10 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         </a>
 
         <a class="card rv" href="#narocnina">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 32a20 20 0 1 1 6 14"/><polyline points="8 40 12 32 20 36"/><path d="M32 22v10l7 5"/></svg>
-          <span class="tag mono">Pivot tedna</span>
-          <h3>Ekipa je v enem dnevu štirikrat zamenjala idejo. Peta je zmagala.</h3>
-          <div class="meta"><span class="mono">2 min</span></div>
+          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="8" width="36" height="48" rx="4"/><path d="M22 20h20M22 28h20M22 36h12"/><path d="M38 44l12-12 4 4-12 12h-4z"/></svg>
+          <span class="tag mono">Startup radar</span>
+          <h3>Študentka iz 2. letnika prodaja urejene zapiske. Prvi mesec: 140 € in nič spanca.</h3>
+          <div class="meta"><span class="mono">4 min</span></div>
         </a>
       </div>
     </div>
