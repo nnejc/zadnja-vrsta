@@ -113,3 +113,35 @@ footer p{margin:0 0 8px;max-width:70ch}
 .case .lbl{display:block;margin-top:8px;color:var(--text-secondary);font-size:.95rem}
 @media (max-width:560px){.case{grid-template-columns:1fr}}
 @media (max-width:560px){.placard{font-size:.6rem;padding:7px 10px;left:20px;bottom:64px}.placard b{font-size:.9rem}}
+
+/* podelitev: award variant */
+.photo.gold{background:linear-gradient(145deg,#f6e27a,#c9a227 45%,#f4e43c 60%,#a8861c);padding:12px 12px 52px}
+.photo.gold figcaption{color:#2a2208}
+.stamp.gold{border-color:var(--accent);color:var(--accent);background:rgba(15,26,58,.55);top:2%;bottom:auto;right:-22px}
+.trophies{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 1.6em}
+.trophies figure{margin:0;background:#0b0f1c;border-radius:18px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(244,228,60,.22),0 30px 50px -30px rgba(0,0,0,.7)}
+.trophies img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;transition:transform 1.2s var(--ease-out)}
+.trophies figure:hover img{transform:scale(1.04)}
+.trophies figcaption{padding:14px 16px;font-size:.95rem;color:var(--text-secondary)}
+.trophies figcaption b{display:block;color:var(--text-primary);font-family:var(--f-display);font-size:1.1rem}
+@media (max-width:560px){.trophies{grid-template-columns:1fr}}
+.vote{margin:0 0 1.6em;display:grid;gap:14px}
+.vote .row{display:grid;grid-template-columns:150px 1fr 48px;gap:14px;align-items:center}
+.vote .name{font-weight:600}
+.vote .bar{height:14px;border-radius:8px;background:rgba(243,241,234,.08);overflow:hidden}
+.vote .bar i{display:block;height:100%;border-radius:8px;background:var(--text-secondary);width:var(--w);transform-origin:left;transform:scaleX(0);transition:transform 1.4s var(--ease-out)}
+.vote .row.win .bar i{background:var(--accent)}
+.vote .row.win .name{color:var(--accent)}
+.vote.in .bar i{transform:scaleX(1)}
+.vote .n{font-family:var(--f-display);font-weight:800;font-size:1.3rem;text-align:right}
+@media (max-width:560px){.vote .row{grid-template-columns:1fr 44px}.vote .bar{grid-column:1 / -1;order:3}}
+.results{width:100%;border-collapse:collapse;margin:0 0 1.6em;font-size:1rem}
+.results th,.results td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line)}
+.results th{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.results td:last-child{text-align:right;font-weight:600;white-space:nowrap}
+.results .gold{color:var(--accent)}
+.speech{margin:2.2em 0 1.6em;padding:46px 30px 26px;border-radius:22px;background:linear-gradient(160deg,var(--panel-2),var(--panel));box-shadow:inset 0 0 0 1.5px var(--accent-muted);position:relative}
+.speech::before{content:"\201E";position:absolute;top:-64px;left:18px;font-family:var(--f-display);font-weight:800;font-size:7rem;line-height:1;color:var(--accent);opacity:.9}
+.speech p{color:var(--text-primary) !important;font-size:1.12rem}
+.speech cite{display:block;margin-top:6px;font-style:normal;color:var(--text-secondary)}
+section[id],.speech,.vote,.trophies,.results{scroll-margin-top:110px}
