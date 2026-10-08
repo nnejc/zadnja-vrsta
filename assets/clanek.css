@@ -164,3 +164,20 @@ section[id],.speech,.vote,.trophies,.results{scroll-margin-top:110px}
 .stamp.pink{border-color:#ff4fa3;color:#ff4fa3;background:rgba(15,26,58,.55);top:auto;bottom:22%;right:-22px}
 .photo.pink{background:linear-gradient(145deg,#ff8cc6,#ff4fa3 55%,#ffb3d9)}
 .photo.pink figcaption{color:#3a0b22}
+
+/* VIP paywall: full-screen lock */
+html.locked,html.locked body{overflow:hidden;height:100%}
+html.locked main,html.locked footer,html.locked .nav{filter:blur(14px);pointer-events:none;user-select:none}
+.paywall{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:20px;background:rgba(8,12,30,.93);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);animation:pwIn .6s var(--ease-out) both}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.paywall{background:rgba(8,12,30,.97)}}
+@keyframes pwIn{from{opacity:0}}
+.pw-card{width:min(520px,100%);text-align:center;padding:40px 30px 32px;border-radius:26px;background:linear-gradient(160deg,#1c2c5c,#121d42);box-shadow:inset 0 0 0 1.5px rgba(244,228,60,.45),0 50px 100px -30px rgba(0,0,0,.8);animation:pwCard .8s var(--ease-out) .1s both}
+@keyframes pwCard{from{opacity:0;transform:translateY(24px) scale(.97)}}
+.pw-card svg{width:64px;height:64px;color:var(--accent);margin:0 auto 14px;display:block}
+.pw-card .mono{color:var(--accent)}
+.pw-card h2{font-family:var(--f-display);font-weight:800;font-size:clamp(1.8rem,4.4vw,2.6rem);line-height:1.05;letter-spacing:-.02em;margin:10px 0 14px}
+.pw-card p{color:var(--text-secondary);margin:0 auto 24px;max-width:38ch}
+.pw-card .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.pw-card .ghost{background:transparent;color:var(--text-primary);box-shadow:inset 0 0 0 1.5px var(--line-strong)}
+.pw-card .ghost:hover{background:rgba(243,241,234,.06)}
+.pw-card .fine{margin:18px 0 0;font-size:.85rem;color:var(--text-secondary);opacity:.8}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="sl">
+<html lang="sl" class="locked">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +18,9 @@
 <link rel="stylesheet" href="../assets/clanek.css">
 </head>
 <body>
-<a class="skip" href="#main">Preskoči na vsebino</a>
+
 <div class="env" aria-hidden="true"></div>
-<nav class="nav" aria-label="Navigacija">
+<nav class="nav" aria-label="Navigacija" inert>
   <a class="brand" href="../index.html">
     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M58 10 6 30l18 7 5 19 9-13 12 7z" fill="#f4e43c"/><path d="M24 37 58 10 29 56" fill="none" stroke="#0f1a3a" stroke-width="2.5" stroke-linejoin="round"/></svg>
     Zadnja vrsta
@@ -28,7 +28,7 @@
   <a class="back" href="../index.html#novice">← Vse novice</a>
 </nav>
 
-<main id="main" tabindex="-1">
+<main id="main" tabindex="-1" inert>
   <article>
     <div class="wrap">
       <header class="poster" id="poster">
@@ -136,12 +136,26 @@
   </article>
 </main>
 
-<footer>
+<footer inert>
   <div class="wrap">
     <p>Zadnja vrsta je neuradni študentski projekt za študente usmeritve Podjetništvo. Ni povezana z Ekonomsko-poslovno fakulteto Univerze v Mariboru.</p>
     <p>Novice na tej strani so satirične. Slike na prvi strani so ustvarjene z umetno inteligenco.</p>
   </div>
 </footer>
+
+<div class="paywall" role="dialog" aria-modal="true" aria-labelledby="pw-h" aria-describedby="pw-d">
+  <div class="pw-card">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 46 4 18l16 12 12-20 12 20 16-12-4 28z" fill="currentColor"/><rect x="8" y="50" width="48" height="6" rx="2" fill="currentColor"/></svg>
+    <p class="mono">Zadnja vrsta VIP</p>
+    <h2 id="pw-h">Ta novica je samo za VIP naročnike</h2>
+    <p id="pw-d">Zgodba o Rabeljskem pubcu 2026 je tako ekskluzivna, da je ne smemo pokazati vsem. Kako je Kosec pokosil konkurenco, lahko preberejo samo VIP naročniki.</p>
+    <div class="btns">
+      <a class="btn" href="../index.html#narocnina" autofocus>Postani VIP</a>
+      <a class="btn ghost" href="../index.html#novice">Nazaj na novice</a>
+    </div>
+    <p class="fine">VIP članstvo podeljuje Tjan osebno. Čakalna doba: do konca kosilniške sezone.</p>
+  </div>
+</div>
 
 <script>
 (() => {

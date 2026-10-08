@@ -205,6 +205,12 @@ section{position:relative;padding:clamp(80px,12vw,150px) 0}
 .feature.flip .img::after{background:linear-gradient(270deg,rgba(22,36,77,0) 70%,rgba(22,36,77,.9))}
 .feature.flip .sticker{left:auto;right:18px;transform:rotate(6deg)}
 @media (max-width:980px){.feature.flip{grid-column:span 2;grid-row:auto}}
+/* stories-only grid: two equal columns of feature cards */
+.grid.stories{grid-template-columns:1fr 1fr}
+.grid.stories .card.feature,.grid.stories .feature.flip{grid-column:auto;grid-row:auto}
+.grid.stories .feature.missing h3{font-size:clamp(1.35rem,1.9vw,1.85rem)}
+.grid.stories .feature.missing .img{flex-basis:42%}
+@media (max-width:900px){.grid.stories{grid-template-columns:1fr}}
 @media (max-width:980px){.grid{grid-template-columns:1fr 1fr}.card.feature{grid-column:span 2;grid-row:auto}}
 @media (max-width:640px){.grid{grid-template-columns:1fr}.card.feature{grid-column:auto}.feature.missing{flex-direction:column}.feature.missing .img{flex:none;aspect-ratio:4/5}.feature.missing .img::after{background:linear-gradient(180deg,rgba(22,36,77,0) 70%,rgba(22,36,77,.9))}}
 
@@ -409,7 +415,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <div class="issue rv"><span class="mono">Ponedeljek, 5. oktober</span><span class="hand">sveže!</span></div>
       </div>
 
-      <div class="grid">
+      <div class="grid stories">
         <a class="card feature missing rv" href="novice/crt-vukovic-love-island.html">
           <div class="img"><img src="assets/vila-crt-intervju.jpg" alt="Črt Vuković v vili Love Island na rdečem kavču pred sliko plaže" width="1000" height="1340" loading="lazy" style="object-position:50% 30%"></div>
           <span class="sticker" aria-hidden="true">bombshell!</span>
@@ -421,21 +427,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
           </div>
         </a>
 
-        <a class="card rv" href="#narocnina">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="10" width="32" height="44" rx="4"/><rect x="22" y="16" width="20" height="12" rx="2"/><circle cx="32" cy="40" r="5"/><path d="M26 54v4M38 54v4M44 20c6 2 8 8 6 14"/></svg>
-          <span class="tag mono">Faks &amp; posel</span>
-          <h3>Kavomat v pritličju ima boljšo maržo kot večina startupov. Izračunali smo.</h3>
-          <div class="meta"><span class="mono">3 min</span></div>
-        </a>
-
-        <a class="card rv" href="#narocnina">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8c6 10 14 14 14 26a14 14 0 0 1-28 0c0-7 4-10 6-15 2 5 4 7 6 7 0-6-2-12 2-18z"/><path d="M32 52v4"/></svg>
-          <span class="tag mono coral">Pojem tedna</span>
-          <h3>Burn rate: hitrost, s katero izgine denar. Tvoja štipendija ga pozna predobro.</h3>
-          <div class="meta"><span class="mono">2 min</span></div>
-        </a>
-
-        <a class="card feature missing flip rv" href="novice/nejc-nedeljko-pepsi-lime.html">
+        <a class="card feature missing rv" href="novice/nejc-nedeljko-pepsi-lime.html">
           <div class="img"><img src="assets/pepsi-nejc.jpg" alt="Nejc Nedeljko v sivem puloverju s kapuco resno gleda v kamero v predavalnici" width="952" height="1269" loading="lazy" style="object-position:50% 40%"></div>
           <span class="sticker" aria-hidden="true">škandal!</span>
           <div class="body">
@@ -444,20 +436,6 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
             <p>Nedo ali Nedo Medo, strastni ljubitelj limetine Pepsi brez sladkorja, ostaja brez svoje pijače. Neuradno: prisiljen je bil piti navadno Coca-Colo. Razmišlja o pritožbi.</p>
             <div class="meta"><span class="mono">4 min branja</span><span class="mono">Beri novico →</span></div>
           </div>
-        </a>
-
-        <a class="card rv" href="#narocnina">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><circle cx="16" cy="22" r="6"/><circle cx="32" cy="18" r="6"/><circle cx="48" cy="22" r="6"/><path d="M8 44c0-8 4-12 8-12s8 4 8 12M24 40c0-8 4-12 8-12s8 4 8 12M40 44c0-8 4-12 8-12s8 4 8 12"/><path d="M28 50l4 6 8-12"/></svg>
-          <span class="tag mono">Raziskava</span>
-          <h3>Skupinska naloga: štirje člani, en delavec. Statistika potrjuje, kar že veš.</h3>
-          <div class="meta"><span class="mono">2 min</span></div>
-        </a>
-
-        <a class="card rv" href="#narocnina">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="8" width="36" height="48" rx="4"/><path d="M22 20h20M22 28h20M22 36h12"/><path d="M38 44l12-12 4 4-12 12h-4z"/></svg>
-          <span class="tag mono">Startup radar</span>
-          <h3>Študentka iz 2. letnika prodaja urejene zapiske. Prvi mesec: 140 € in nič spanca.</h3>
-          <div class="meta"><span class="mono">4 min</span></div>
         </a>
 
         <a class="card feature missing rv" href="novice/najden-tilen-spindler.html">
@@ -471,43 +449,37 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
           </div>
         </a>
 
-        <a class="card rv" href="novice/crt-vukovic-fuge.html">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="20" width="44" height="28" rx="6"/><path d="M10 30h44M22 20v-6h20v6"/><circle cx="32" cy="39" r="3"/></svg>
-          <span class="tag mono coral">Kronika</span>
-          <h3>Šok: mama Črtu Vukoviću v sobi našla tri paketke fug</h3>
-          <div class="meta"><span class="mono">5 min</span><span class="mono">Arhiv</span></div>
-        </a>
-
-        <a class="card rv" href="novice/pogresan-tilen-spindler.html">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="27" r="15"/><path d="M38 38l16 16"/><path d="M22 24c1-3 3-4 5-4"/></svg>
-          <span class="tag mono coral">Pogrešan</span>
-          <h3>Pogrešan: Tilen Spindler. Na faksu ga ni od 6. 7.</h3>
-          <div class="meta"><span class="mono">5 min</span><span class="mono">Rešeno ✓</span></div>
-        </a>
-
-        <a class="card feature missing flip rv" href="novice/tjan-kolednik-rabeljski-pubec.html">
+        <a class="card feature missing rv" href="novice/tjan-kolednik-rabeljski-pubec.html">
           <div class="img"><img src="assets/nagrada-tjan.jpg" alt="Tjan Kolednik v kapi s panterjem in modrem delovnem kombinezonu, nasmejan" width="819" height="1456" loading="lazy" style="object-position:50% 38%"></div>
-          <span class="sticker" aria-hidden="true">zmagovalec!</span>
+          <span class="sticker" aria-hidden="true">samo VIP!</span>
           <div class="body">
-            <span class="tag mono">Podelitev</span>
+            <span class="tag mono">VIP · Podelitev</span>
             <h3>Tjan Kolednik je Rabeljski pubec 2026. Že drugo leto zapored.</h3>
             <p>Kolke, Panter, Črni in po novem Kosec je z 69 glasovi za las premagal Lana Breznika. Poleti je za Slovenske železnice pokosil vse.</p>
+            <div class="meta"><span class="mono">5 min branja</span><span class="mono">Samo za VIP 🔒</span></div>
+          </div>
+        </a>
+
+        <a class="card feature missing rv" href="novice/crt-vukovic-fuge.html">
+          <div class="img"><img src="assets/kronika-vuko.jpg" alt="Črno-bela fotografija Črta Vukovića v črnem modrčku z bleščicami" width="819" height="1456" loading="lazy" style="object-position:50% 40%"></div>
+          <span class="sticker" aria-hidden="true">ekskluzivno!</span>
+          <div class="body">
+            <span class="tag mono coral">Kronika</span>
+            <h3>Šok: mama Črtu Vukoviću v sobi našla tri paketke fug</h3>
+            <p>Vuko, Šminka ali Vukica je v hišnem priporu. Brani se, da so fuge podtaknjene. Poznavalci pravijo drugače.</p>
             <div class="meta"><span class="mono">5 min branja</span><span class="mono">Beri novico →</span></div>
           </div>
         </a>
 
-        <a class="card rv" href="#narocnina">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 32a20 20 0 1 1 6 14"/><polyline points="8 40 12 32 20 36"/><path d="M32 22v10l7 5"/></svg>
-          <span class="tag mono">Pivot tedna</span>
-          <h3>Ekipa je v enem dnevu štirikrat zamenjala idejo. Peta je zmagala.</h3>
-          <div class="meta"><span class="mono">2 min</span></div>
-        </a>
-
-        <a class="card rv" href="#tovarna">
-          <svg class="doodle" viewBox="0 0 64 64" aria-hidden="true"><path d="M58 10 6 30l18 7 5 19 9-13 12 7z"/><path d="M24 37 58 10"/></svg>
-          <span class="tag mono">Ideja tedna</span>
-          <h3>Zloži papirnato letalo in dobi idejo za svoj prvi posel.</h3>
-          <div class="meta"><span class="mono">1 min</span><span class="mono">Tovarna idej →</span></div>
+        <a class="card feature missing rv" href="novice/pogresan-tilen-spindler.html">
+          <div class="img"><img src="assets/pogresan-spindi.jpg" alt="Črno-bela fotografija Tilna Spindlerja v trgovini, v rokah drži papirnate robčke in ledeni čaj" width="819" height="1456" loading="lazy"></div>
+          <span class="sticker" aria-hidden="true">rešeno!</span>
+          <div class="body">
+            <span class="tag mono coral">Pogrešan</span>
+            <h3>Pogrešan: Tilen Spindler. Na faksu ga ni od 6. 7.</h3>
+            <p>Med prijatelji in sošolci znan kot Spindi ali Bambi. Zadnjič viden v puhovcu, z robčki in ledenim čajem v rokah.</p>
+            <div class="meta"><span class="mono">5 min branja</span><span class="mono">Beri novico →</span></div>
+          </div>
         </a>
       </div>
     </div>
