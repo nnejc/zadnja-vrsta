@@ -161,3 +161,6 @@ section[id],.speech,.vote,.trophies,.results{scroll-margin-top:110px}
 .letter{margin:0 0 1.6em;padding:28px 30px;border-radius:6px;background:var(--paper);color:var(--paper-ink);font-family:var(--f-mono);font-size:.92rem;line-height:1.7;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);transform:rotate(-.5deg)}
 .letter p{color:var(--paper-ink) !important;margin:0 0 1em !important}
 .letter .sig{font-family:var(--f-hand);font-size:1.7rem;line-height:1;margin-top:.4em !important}
+.stamp.pink{border-color:#ff4fa3;color:#ff4fa3;background:rgba(15,26,58,.55);top:auto;bottom:22%;right:-22px}
+.photo.pink{background:linear-gradient(145deg,#ff8cc6,#ff4fa3 55%,#ffb3d9)}
+.photo.pink figcaption{color:#3a0b22}
